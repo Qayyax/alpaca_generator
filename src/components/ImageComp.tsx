@@ -17,7 +17,7 @@ export default function ImageComp({ selected, random }: Prop) {
     if (ref.current === null) {
       return;
     }
-    toJpeg(ref.current, { cacheBust: true })
+    toJpeg(ref.current, { cacheBust: true, width: 500, height: 500 })
       .then((dataUrl) => {
         const link = document.createElement("a");
         link.download = "alpaca.jpg";
