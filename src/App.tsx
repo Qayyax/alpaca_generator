@@ -2,8 +2,7 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <div>
-      <h1>Hello from tailwind</h1>
+    <div className="flex items-center justify-center py-4">
       <Home />
     </div>
   );

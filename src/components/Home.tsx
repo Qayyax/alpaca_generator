@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Options from "./Options";
 import { AlapacaKey, AlapacaType, alpacaObjects } from "../data";
-import ImageDisplay from "./ImageDisplay";
-import Random from "./Random";
 import ImageComp from "./ImageComp";
 
 export default function Home() {
@@ -55,12 +53,10 @@ export default function Home() {
     setCurrentSelected(updateCurrentSelected);
   };
 
-  // <ImageDisplay selected={currentSelected} />
-  // <Random random={getRandomAlpaca} />
   return (
-    <section className="flex gap-x-3">
+    <section className="flex gap-9 items-center">
       <ImageComp selected={currentSelected} random={getRandomAlpaca} />
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-4">
         <Options
           title="Accessorize the alpaca's"
           categories={dataKeys}

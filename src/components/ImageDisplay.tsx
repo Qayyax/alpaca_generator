@@ -16,7 +16,7 @@ export default function ImageDisplay({ selected }: Props) {
 
   return (
     <div
-      className="bg-cover relative "
+      className="bg-cover relative rounded-md"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <img src={ears} alt={selected.ears} className="absolute top-0 " />

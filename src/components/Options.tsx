@@ -15,10 +15,10 @@ export default function Options({
   handleSelected,
 }: Props) {
   return (
-    <div className="border-2 border-purple-900 rounded-lg flex flex-col items-start gap-y-2">
+    <div className="flex flex-col items-start gap-y-2">
       {/*the width is full*/}
-      <h2 className="font-semibold">{title.toUpperCase()}</h2>
-      <div className="flex flex-wrap gap-2 border-2 p-4 border-red-700 rounded-lg">
+      <h2 className="font-extrabold">{title.toUpperCase()}</h2>
+      <div className="flex flex-wrap gap-2 max-w-[450px] p-4 border-red-700 rounded-lg">
         {/*any option selected here should be saved*/}
         {categories &&
           categories.map((option) => (
