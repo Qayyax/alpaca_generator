@@ -9,7 +9,6 @@ type Prop = {
   selected: AlapacaType;
   random: () => void;
 };
-
 export default function ImageComp({ selected, random }: Prop) {
   // https://freedium.cfd/https://medium.com/react-courses/save-react-component-as-png-jpeg-or-pdf-bdd626184693
   const ref = useRef<HTMLDivElement>(null);
