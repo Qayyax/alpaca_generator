@@ -54,7 +54,7 @@ export default function Home() {
   };
 
   return (
-    <section className="flex gap-9 items-center">
+    <section className="flex flex-col gap-5 md:flex-row md:gap-9 items-center">
       <ImageComp selected={currentSelected} random={getRandomAlpaca} />
       <div className="flex flex-col gap-4">
         <Options
