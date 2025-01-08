@@ -3,6 +3,7 @@ import Options from "./Options";
 import { AlapacaKey, AlapacaType, alpacaObjects } from "../data";
 import ImageDisplay from "./ImageDisplay";
 import Random from "./Random";
+import ImageComp from "./ImageComp";
 
 export default function Home() {
   const [accessorySelected, setAccessorySelected] =
@@ -54,10 +55,11 @@ export default function Home() {
     setCurrentSelected(updateCurrentSelected);
   };
 
+  // <ImageDisplay selected={currentSelected} />
+  // <Random random={getRandomAlpaca} />
   return (
     <section className="flex gap-x-3">
-      <ImageDisplay selected={currentSelected} />
-      <Random random={getRandomAlpaca} />
+      <ImageComp selected={currentSelected} random={getRandomAlpaca} />
       <div className="flex flex-col">
         <Options
           title="Accessorize the alpaca's"
