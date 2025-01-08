@@ -19,7 +19,7 @@ export default function ImageComp({ selected, random }: Prop) {
     toJpeg(ref.current, { cacheBust: true, width: 500, height: 500 })
       .then((dataUrl) => {
         const link = document.createElement("a");
-        link.download = "alpaca.jpg";
+        link.download = "alpaca.jpeg";
         link.href = dataUrl;
         document.body.appendChild(link);
         link.click();
